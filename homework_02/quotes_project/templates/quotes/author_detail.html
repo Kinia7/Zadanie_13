@@ -1,0 +1,7 @@
+{% extends 'quotes/base.html' %} {% block content %}
+<h1>{{ author.name }}</h1>
+<p>{{ author.biography }}</p>
+<h2>Quotes</h2>
+{% for quote in quotes %}
+<p>{{ quote.quote }}</p>
+{% endfor %} {% endblock %}
